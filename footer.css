@@ -1,0 +1,53 @@
+.bloqueo-alerta{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.36);
+    top: 0;
+    left: 0;
+    z-index: 95;
+    box-sizing: border-box;
+}
+
+.content-alerta{
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.775);
+    border-radius: 6px;
+    position: fixed;
+    width: 90%;
+    max-width: 400px;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px;
+    box-sizing: border-box;
+    z-index: 100;
+}
+@media (max-width: 399px){
+    .content-alerta{
+        padding-left: 0;
+    }
+}
+.title-alerta{
+    font-size: 300%;
+    color: #333;
+}
+.btn-alerta{
+border: none;
+outline: none;
+padding: 15px;
+margin-top: 10px;
+margin-bottom: 5px;
+border-radius: 4px;
+color: #eee;
+font-size: 18px;
+cursor: pointer;
+background: #333;
+} 
+#linea-culture-alerta{
+    display: none;
+}
+
+.footer-a {
+    cursor: pointer;
+}
